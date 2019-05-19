@@ -120,7 +120,7 @@ body {
 .u-margin-top-big {
   margin-top: 12rem; }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -128,7 +128,9 @@ body {
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer; }
 
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -137,7 +139,8 @@ body {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
-.btn:active {
+.btn:active, .btn:focus {
+  outline: none;
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
@@ -221,7 +224,8 @@ body {
   text-align: center;
   height: 38vh;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  overflow: hidden; }
   .feature-box__icon {
     display: inline-block;
     background-image: linear-gradient(to right, #90cf73, #28b485);
@@ -387,6 +391,76 @@ body {
     height: 100%;
     object-fit: cover; }
 
+.form {
+  white-space: nowrap; }
+  .form__group:not(:last-child) {
+    margin-bottom: 2rem; }
+  .form__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: #000;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 90%;
+    display: block;
+    transition: all 0.3s; }
+    .form__input:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+      border-bottom: 3px solid #71cf60; }
+      .form__input:focus:invalid {
+        border-bottom: 3px solid #ff7730; }
+    .form__input::-webkit-input-placeholder {
+      color: #999; }
+  .form__label {
+    display: block;
+    color: #777;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-left: 2rem;
+    padding-top: 0.7rem;
+    transition: all 0.3s; }
+  .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    transform: translateY(-4rem); }
+  .form__input:not(:placeholder-shown) + .form__label {
+    opacity: 1;
+    transform: translateY(0); }
+  .form__radio-group {
+    width: 50%;
+    display: inline-block; }
+  .form__radio-label {
+    font-size: 1.6rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 3.5rem; }
+  .form__radio-button {
+    height: 3rem;
+    width: 3rem;
+    border: 5px solid #71cf60;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%); }
+  .form__radio-input {
+    display: none; }
+  .form__radio-input:checked + .form__radio-label > .form__radio-button::after {
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    border: 0.7rem solid #71cf60;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -434,6 +508,45 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer__logo {
+    width: 15rem;
+    display: inline-block; }
+  .footer__navigation {
+    display: inline-block;
+    padding-top: 2rem;
+    border-top: 1px solid #777; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link {
+    padding: 3px;
+    transition: all 0.1s; }
+    .footer__link:link, .footer__link:visited {
+      background-color: #333;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #f7f7f7;
+      display: inline-block; }
+    .footer__link:hover, .footer__link:active {
+      border-radius: 2px;
+      color: #28b485;
+      box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.4);
+      transform: rotate(5deg) scale(1.2); }
+  .footer__copyright {
+    display: inline-block;
+    padding-top: 2rem;
+    border-top: 1px solid #777; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
@@ -456,3 +569,17 @@ body {
 .section-stories {
   padding: 15rem 0rem;
   position: relative; }
+
+.section-book {
+  padding: 15rem 0rem;
+  background: linear-gradient(to bottom right, #90cf73, #28b485); }
+  .section-book .book {
+    width: 100%;
+    height: 50rem;
+    border-radius: 3px;
+    box-shadow: 0rem 2rem 4rem rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(../../img/nat-10.jpg);
+    background-size: cover; }
+    .section-book .book__form {
+      width: 50%;
+      padding: 6rem; }
