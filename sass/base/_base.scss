@@ -7,10 +7,28 @@
 }
 
 html {
-	font-size: 10px;
+	font-size: 62.5%;
+
+	// Remember if we have multiple matches, the last one wins.
+	// So always the larger ones before the smaller ones.
+	@include respond(big-desktop) {
+		font-size: 75%;
+	}
+
+	@include respond(tab-land) {
+		font-size: 56.25%;
+	}
+
+	@include respond(tab-port) {
+		font-size: 50%;
+	}
 }
 
 body {
 	padding: 3rem;
 	box-sizing: border-box;
+
+	@include respond(tab-port) {
+		padding: 0;
+	}
 }
