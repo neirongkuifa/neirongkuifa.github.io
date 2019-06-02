@@ -116,10 +116,10 @@ body {
   transition: all 0.2s; }
   @media (max-width: 56.25em) {
     .heading-secondary {
-      font-size: 2.5rem; } }
+      font-size: 3rem; } }
   @media (max-width: 37.5em) {
     .heading-secondary {
-      font-size: 2rem; } }
+      font-size: 2.5rem; } }
   .heading-secondary:hover {
     transform: skew(15deg, 2deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -244,12 +244,12 @@ body {
     outline-offset: 2rem; }
     .composition__photo--p1 {
       top: -2rem;
-      left: 1rem; }
+      right: 20rem; }
     .composition__photo--p2 {
-      left: 25rem;
+      right: 0rem;
       top: 3rem; }
     .composition__photo--p3 {
-      left: 12rem;
+      right: 10rem;
       top: 12rem; }
   .composition:hover > .composition__photo:hover {
     outline: 1.5rem solid #71cf60;
