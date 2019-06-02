@@ -580,6 +580,14 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
   z-index: 102;
   cursor: pointer; }
+  @media (max-width: 56.25em) {
+    .navigation__button {
+      top: 4rem;
+      right: 4rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__button {
+      top: 3rem;
+      right: 3rem; } }
 
 .navigation__background {
   width: 6rem;
@@ -591,6 +599,14 @@ body {
   background-image: radial-gradient(#6ee039, #1ca817);
   z-index: 100;
   transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1); }
+  @media (max-width: 56.25em) {
+    .navigation__background {
+      top: 4.5rem;
+      right: 4.5rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__background {
+      top: 3.2rem;
+      right: 3.2rem; } }
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(100); }
@@ -722,7 +738,7 @@ body {
   background-size: cover;
   background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% calc(100vh - 12vw), 0 100%); }
   .header__logo-box {
     position: absolute;
     top: 4rem;
