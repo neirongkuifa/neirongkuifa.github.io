@@ -10,6 +10,8 @@
 	visibility: hidden;
 	transition: all 0.2s ease-in-out;
 
+	// When target goes else where, opacity turn back to 0
+	// So close button should be a link point to another section
 	&:target {
 		opacity: 1;
 		visibility: visible;
