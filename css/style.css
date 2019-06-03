@@ -812,12 +812,12 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 13vw 0;
+  padding: 14vw 0;
   margin-top: -12vw; }
 
 .section-features {
   margin-top: -12vw;
-  padding: 13vw 0;
+  padding: 14vw 0;
   background: linear-gradient(to bottom right, rgba(113, 207, 96, 0.8), rgba(28, 168, 23, 0.8)), url(../../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-6.5deg); }
