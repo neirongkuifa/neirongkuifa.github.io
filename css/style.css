@@ -766,6 +766,9 @@ body {
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .footer__logo-box {
+        margin-bottom: 6rem; } }
   .footer__logo {
     width: 15rem;
     display: inline-block; }
@@ -809,12 +812,12 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 25rem 0;
-  margin-top: -20vh; }
+  padding: 13vw 0;
+  margin-top: -12vw; }
 
 .section-features {
-  margin-top: -13vw;
-  padding: 15vw 0;
+  margin-top: -12vw;
+  padding: 13vw 0;
   background: linear-gradient(to bottom right, rgba(113, 207, 96, 0.8), rgba(28, 168, 23, 0.8)), url(../../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-6.5deg); }
@@ -822,8 +825,8 @@ body {
     transform: skewY(6.5deg); }
 
 .section-tours {
-  margin-top: -13vw;
-  padding: 25rem 0 15rem 0;
+  margin-top: -12vw;
+  padding: 15vw 0 5vw 0;
   background-color: #f7f7f7; }
 
 .section-stories {
