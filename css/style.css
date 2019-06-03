@@ -706,7 +706,7 @@ body {
     margin-bottom: 6rem; }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 75vw; } }
+      max-width: 65vw; } }
   .row [class^='col-'] {
     float: left; }
     .row [class^='col-']:not(:last-child) {
@@ -830,7 +830,7 @@ body {
   background-color: #f7f7f7; }
 
 .section-stories {
-  padding: 15rem 0rem;
+  padding: 12vw 0rem;
   position: relative; }
 
 .section-book {
