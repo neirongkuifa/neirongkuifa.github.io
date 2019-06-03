@@ -3,6 +3,10 @@
 	padding: 10rem 0;
 	font-size: 1.4rem;
 
+	@include respond(tab-port) {
+		padding: 8rem 0;
+	}
+
 	&__logo-box {
 		text-align: center;
 		margin-bottom: 8rem;
@@ -17,6 +21,11 @@
 		display: inline-block;
 		padding-top: 2rem;
 		border-top: 1px solid $color-grey-dark-1;
+
+		@include respond(tab-port) {
+			width: 100%;
+			text-align: center;
+		}
 	}
 
 	&__list {
@@ -34,13 +43,14 @@
 	&__link {
 		padding: 3px;
 		transition: all 0.1s;
+		color: inherit;
 
 		&:link,
 		&:visited {
 			background-color: $color-grey-dark-3;
 			text-transform: uppercase;
 			text-decoration: none;
-			color: $color-grey-light-1;
+			color: inherit;
 			display: inline-block;
 		}
 
@@ -57,5 +67,10 @@
 		display: inline-block;
 		padding-top: 2rem;
 		border-top: 1px solid $color-grey-dark-1;
+
+		@include respond(tab-port) {
+			width: 100%;
+			text-align: center;
+		}
 	}
 }
