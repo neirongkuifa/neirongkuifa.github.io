@@ -149,9 +149,15 @@ body {
 
 .u-margin-bottom-medium {
   margin-bottom: 5rem; }
+  @media (max-width: 37.5em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem; } }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
+  @media (max-width: 37.5em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem; } }
 
 .u-margin-top-small {
   margin-top: 1rem; }
@@ -292,13 +298,13 @@ body {
   padding: 2.5rem;
   border-radius: 3px;
   text-align: center;
-  height: 38vh;
+  height: 40vh;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
   transition: all 0.2s;
   overflow: hidden; }
   @media (max-width: 56.25em) {
     .feature-box {
-      height: 30vh; } }
+      height: 35vh; } }
   .feature-box__icon {
     display: inline-block;
     background-image: linear-gradient(to right, #6ee039, #1ca817);

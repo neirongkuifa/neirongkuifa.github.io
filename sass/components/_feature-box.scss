@@ -4,13 +4,13 @@
 	padding: 2.5rem;
 	border-radius: 3px;
 	text-align: center;
-	height: 38vh;
+	height: 40vh;
 	box-shadow: 0 2rem 4rem rgba($color-black, 0.3);
 	transition: all 0.2s;
 	overflow: hidden;
 
 	@include respond(tab-port) {
-		height: 30vh;
+		height: 35vh;
 	}
 
 	&__icon {
