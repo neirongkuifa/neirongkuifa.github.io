@@ -10,7 +10,7 @@
 	overflow: hidden;
 
 	@include respond(tab-port) {
-		height: 30vh;
+		height: 35vh;
 	}
 
 	&__icon {
