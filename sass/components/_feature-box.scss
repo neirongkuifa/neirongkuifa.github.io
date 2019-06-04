@@ -28,7 +28,8 @@
 		margin-bottom: 0.5rem;
 
 		@include respond(phone) {
-			font-size: 4rem;
+			font-size: 3rem;
+			margin-bottom: 0;
 		}
 	}
 
