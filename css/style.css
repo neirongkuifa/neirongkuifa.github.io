@@ -491,6 +491,9 @@ body {
 
 .form {
   white-space: nowrap; }
+  @media (max-width: 37.5em) {
+    .form {
+      white-space: inherit; } }
   .form__group:not(:last-child) {
     margin-bottom: 2rem; }
   .form__input {
@@ -513,6 +516,9 @@ body {
         border-bottom: 3px solid #ff7730; }
     .form__input::-webkit-input-placeholder {
       color: #999; }
+    @media (max-width: 56.25em) {
+      .form__input {
+        margin: auto; } }
   .form__label {
     display: block;
     color: #777;
@@ -532,7 +538,7 @@ body {
     display: inline-block; }
     @media (max-width: 37.5em) {
       .form__radio-group {
-        display: block;
+        width: 100%;
         margin-bottom: 2rem; } }
   .form__radio-label {
     font-size: 1.6rem;
@@ -922,4 +928,5 @@ body {
       @media (max-width: 56.25em) {
         .section-book .book__form {
           width: 100%;
-          padding: 3rem; } }
+          padding: 3rem;
+          text-align: center; } }
