@@ -10,7 +10,7 @@
 	overflow: hidden;
 
 	@include respond(tab-port) {
-		height: 25vh;
+		height: 30vh;
 	}
 
 	&__icon {
@@ -26,6 +26,10 @@
 		text-transform: uppercase;
 		color: transparent;
 		margin-bottom: 0.5rem;
+
+		@include respond(phone) {
+			font-size: 4rem;
+		}
 	}
 
 	&:hover {

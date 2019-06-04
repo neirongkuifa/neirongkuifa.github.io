@@ -298,7 +298,7 @@ body {
   overflow: hidden; }
   @media (max-width: 56.25em) {
     .feature-box {
-      height: 25vh; } }
+      height: 30vh; } }
   .feature-box__icon {
     display: inline-block;
     background-image: linear-gradient(to right, #6ee039, #1ca817);
@@ -308,6 +308,9 @@ body {
     text-transform: uppercase;
     color: transparent;
     margin-bottom: 0.5rem; }
+    @media (max-width: 37.5em) {
+      .feature-box__icon {
+        font-size: 4rem; } }
   .feature-box:hover {
     transform: translateY(-2rem) scale(1.1); }
 
