@@ -10,6 +10,15 @@
 	transform: skewX(-12deg);
 	@include clearfix;
 
+	@include respond(tab-port) {
+		transform: skewX(0deg);
+		width: 100%;
+	}
+
+	@include respond(phone) {
+		padding: 5rem;
+	}
+
 	&__shape {
 		position: relative;
 		width: 15rem;
@@ -20,6 +29,14 @@
 		-webkit-clip-path: circle(50% at 50% 50%);
 		clip-path: circle(50% at 50% 50%);
 		transform: translateX(-3rem) skewX(12deg);
+		@include respond(tab-port) {
+			transform: translateX(-3rem) skewX(0deg);
+		}
+
+		@include respond(phone) {
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
 
 	&__image {
@@ -33,6 +50,14 @@
 
 	&__text {
 		transform: skewX(12deg);
+
+		@include respond(tab-port) {
+			transform: skewX(0deg);
+		}
+
+		@include respond(phone) {
+			clear: both;
+		}
 	}
 
 	&__caption {
