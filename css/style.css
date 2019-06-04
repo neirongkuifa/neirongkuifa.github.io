@@ -530,6 +530,10 @@ body {
   .form__radio-group {
     width: 50%;
     display: inline-block; }
+    @media (max-width: 37.5em) {
+      .form__radio-group {
+        display: block;
+        margin-bottom: 2rem; } }
   .form__radio-label {
     font-size: 1.6rem;
     cursor: pointer;
@@ -873,7 +877,7 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 14vw 0;
+  padding: 15vw 0;
   margin-top: -12vw; }
 
 .section-features {
@@ -904,6 +908,19 @@ body {
     box-shadow: 0rem 2rem 4rem rgba(0, 0, 0, 0.5);
     background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(../../img/nat-10.jpg);
     background-size: cover; }
+    @media (max-width: 75em) {
+      .section-book .book {
+        background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 70%, transparent 70%), url(../../img/nat-10.jpg); } }
+    @media (max-width: 56.25em) {
+      .section-book .book {
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 100%, transparent 100%), url(../../img/nat-10.jpg); } }
     .section-book .book__form {
       width: 50%;
       padding: 6rem; }
+      @media (max-width: 75em) {
+        .section-book .book__form {
+          width: 70%; } }
+      @media (max-width: 56.25em) {
+        .section-book .book__form {
+          width: 100%;
+          padding: 3rem; } }

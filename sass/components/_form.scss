@@ -56,6 +56,11 @@
 		&-group {
 			width: 50%;
 			display: inline-block;
+
+			@include respond(phone) {
+				display: block;
+				margin-bottom: 2rem;
+			}
 		}
 		&-label {
 			font-size: $default-font-size;
