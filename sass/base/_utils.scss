@@ -20,8 +20,16 @@
 	}
 	&medium {
 		margin-top: 5rem;
+
+		@include respond(phone) {
+			margin-top: 3rem;
+		}
 	}
 	&big {
 		margin-top: 12rem;
+
+		@include respond(phone) {
+			margin-top: 5rem;
+		}
 	}
 }

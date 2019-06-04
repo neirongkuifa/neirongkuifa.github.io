@@ -1,11 +1,15 @@
 .row {
 	@include clearfix;
 
-	max-width: $grid-width;
+	max-width: 75vw;
 	margin: 0 auto;
 
 	&:not(:last-child) {
 		margin-bottom: $gutter-vertical-small;
+
+		@include respond(phone) {
+			margin-bottom: 0;
+		}
 	}
 
 	@include respond(tab-port) {
@@ -19,6 +23,11 @@
 			@include respond(tab-port) {
 				margin-right: 0;
 				margin-bottom: $gutter-vertical-small;
+			}
+
+			@include respond(phone) {
+				margin-right: 0;
+				margin-bottom: $gutter-vertical-xsmall;
 			}
 		}
 
