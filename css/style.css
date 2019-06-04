@@ -310,7 +310,7 @@ body {
     margin-bottom: 0.5rem; }
     @media (max-width: 37.5em) {
       .feature-box__icon {
-        font-size: 3rem;
+        font-size: 4rem;
         margin-bottom: 0; } }
   .feature-box:hover {
     transform: translateY(-2rem) scale(1.1); }
